@@ -1,0 +1,52 @@
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 450px;
+    width: 100%;
+    text-align: center;
+    background-image: url("../../public/images/heros/hero-image_4.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 70px;
+    z-index: 2;
+  }
+  
+  .hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--light-black);
+    top: 0; right: 0; left: 0; bottom: 0;
+    opacity: 0.5;
+    z-index: 2;
+  }
+  
+  .hero-inner {
+    font-family: 'Dosis', san-serif;
+    margin: 0 auto;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid var(--white);
+    z-index: 3;
+  }
+  
+  .hero-title {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 36px;
+    margin: 0 0 15px 0;
+    word-wrap: break-word;
+  }
+  
+  .hero-description {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }

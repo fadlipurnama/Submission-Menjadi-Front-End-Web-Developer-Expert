@@ -1,0 +1,113 @@
+/* Navbar */
+header.header-container {
+  padding: 5rem 10%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+} 
+header img {
+  user-select:none;
+  pointer-events: none;
+}
+.header-container .logo {
+  font-family: 'Dosis', san-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: black;
+  text-transform: capitalize;
+  width: 200px;
+  height: 65px;
+  padding: 15px 20px;
+}
+.header-container .logo i{
+  color: var(--blue);
+  padding-right: .5rem;
+}
+.navbar{
+  transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+.navbar ul li{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 2rem;
+  width: 100px;
+  height: 100%;
+}
+.navbar ul li a{
+  padding: 16px 0;
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  color: var(--light-black);
+} 
+.navbar ul li a:hover,ul li a:focus{
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+#menu-btn {
+  font-size: 2.5rem;
+  cursor:pointer;
+  color: var(--black);
+  background-color: white;
+  display: none;
+  transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+  border: none;
+}
+
+
+/* Responsive Navbar */
+@media screen and (max-width: 860px) {
+  #menu-btn {
+      display: inline-block;
+      height: 56px;
+      width: 56px;
+      order: 3;
+  }
+  .fa-times{
+    transform: rotate(180deg);
+  }
+  .navbar{
+    height: 350px;
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    background-color: var(--white);
+    text-align: center;
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    order: 2;
+    }
+  .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navbar ul {
+    display: block;
+    background-color: var(--white);
+  }
+  .navbar ul li{
+    margin: 4rem auto;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1rem 0;
+  }
+  .navbar ul li a{
+    margin: 0;
+    padding: 1rem 0;
+  }
+}

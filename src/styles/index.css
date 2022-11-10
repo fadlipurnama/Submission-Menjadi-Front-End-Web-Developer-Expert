@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Roboto:wght@300;400&display=swap');
+
+/* css */
+@import './components/navbar.css';
+@import './components/hero.css';
+@import './components/main-content.css';
+@import './components/footer.css';
+
+
+@import './responsive/set-responsive.scss';
+
+:root{
+  --blue:#1997ff;
+  --blueSemiDark: #185fce;
+  --blueDark: #181fce;
+  --black:#222;
+  --white:#fff;
+  --yellow: rgb(255, 255, 20);
+  --light-black:#666;
+  --light-white:#ccc;
+  --light-bg:#f4f4fe;
+  --dark-bg:rgba(0,0,0,.7);
+  --border:1rem solid #aaa;
+  --box-shadow:0 4px 8px 0 rgba(0,0,0,.1);
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: var(--light-bg);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+:focus {
+  outline: 4px solid var(--yellow);
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: var(--blue);
+}
+
+img {
+  display: block;
+}
+
+.skip-link {
+  display: inline-block;
+  align-content: center;
+  text-decoration: none;
+  width: 280px;
+  padding: 20px;
+  font-size: 1.7rem;
+  transition: .3s;
+  background-color: var(--blue);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  left: -280px;
+  z-index: 1001;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.material-icons {
+  padding-bottom: 3px;
+  vertical-align: middle !important;
+}
+
+
+
+
+
+
+
+
+
+

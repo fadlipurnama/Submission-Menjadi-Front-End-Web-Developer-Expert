@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CekResto.</title>
+
+  <!-- IMPORT MATERIAL ICON -->
+  <link rel="preload" as="style" onload="this.rel ='stylesheet'" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+  
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Skip Content -->
+  <a href="#main-content" class="skip-link" tabindex="1">Menuju ke konten utama<span class="material-icons" aria-hidden="true">skip_next</span></a>
+
+  <!-- Header -->
+  <header class="header-container" >
+      <a  href="" class="logo"> 
+        <i class="fas fa-utensils"></i>
+        CekResto.
+      </a>
+    
+    <!-- Hamburger Menu -->
+    <button aria-label="list menu" id="menu-btn" class="fas fa-bars" tabindex="0"></button>
+
+    <!-- Navbar -->
+    <nav-bar> </nav-bar>
+  </header>
+
+  <!-- Hero -->
+  <hero-content class="hero__text"></hero-content>
+  
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="recommendation">
+        <h1 class="label_section" tabindex="0">Rekomendasi Restoran Favorite
+        </h1>
+      <div class="recommendation-container"></div>
+    </section>
+
+    <section class="exploration">
+      <h2 class="label_section" tabindex="0">Rekomendasi Restoran Lainnya</h2>
+      <div class="exploration-container"></div>
+    </section>
+  </main>
+      
+  <!-- Footer -->
+  <custom-footer></custom-footer>
+</body>
+</html>

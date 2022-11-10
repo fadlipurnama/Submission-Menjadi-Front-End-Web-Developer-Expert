@@ -1,0 +1,13 @@
+/* Footer */
+.footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+.footer p {
+  font-size: 1.6rem;
+}
