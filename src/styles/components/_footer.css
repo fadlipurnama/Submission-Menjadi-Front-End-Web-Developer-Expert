@@ -1,0 +1,15 @@
+
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+    bottom: 0;
+    position: absolute;
+  }
+
+footer p {
+  font-size: 1.5rem;
+}

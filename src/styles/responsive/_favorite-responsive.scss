@@ -1,0 +1,20 @@
+@import './properties/mixins.scss';
+@import './properties/variable.scss';
+
+@include media-in(mobile) {
+    .favorite-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@include media-in(tablet) {
+    .favorite-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include media-in(desktop) {
+    .favorite-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

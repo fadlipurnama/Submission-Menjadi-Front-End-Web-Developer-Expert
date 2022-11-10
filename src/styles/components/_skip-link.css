@@ -1,0 +1,19 @@
+.skip-link {
+    display: inline-block;
+    align-content: center;
+    text-decoration: none;
+    width: 280px;
+    padding: 20px;
+    font-size: 1.7rem;
+    transition: .3s;
+    background-color: var(--blue);
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    left: -280px;
+    z-index: 1001;
+  }
+  
+  .skip-link:focus {
+    left: 0;
+  }

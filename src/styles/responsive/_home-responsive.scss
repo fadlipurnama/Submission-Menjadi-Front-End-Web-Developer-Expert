@@ -1,0 +1,42 @@
+@import './properties/mixins.scss';
+@import './properties/variable.scss';
+
+@include media-in(small-mobile) {
+    .hero-title {
+        font-size: 30px;
+    }
+    .hero-description {
+        font-size: 20px;
+      }
+}
+@include media-in(mobile) {
+  .exploration-container,
+  .recommendation-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 16px;
+    }
+  .hero-title {
+      font-size: 39px;
+      margin-bottom: 28px;
+  }
+  .hero-description {
+      font-size: 25px;
+  }
+}
+
+@include media-in(tablet) {
+  .exploration-container, 
+  .recommendation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@include media-in(desktop) {
+  .recommendation-container, 
+  .exploration-container {
+      max-width: 1250px;
+  }
+}

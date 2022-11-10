@@ -1,0 +1,101 @@
+resto-item {
+    margin-left: 10px;
+}
+
+.exploration .recomendation{
+    padding: 32px;
+}
+.label_section {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    height: 65px;
+    padding: 16px;
+    font-weight: bolder;
+    font-family: 'Dosis', san-serif;
+    margin-bottom: 20px;
+  }
+ .exploration-container, .recommendation-container {
+    display: grid;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 15px 30px;
+}
+
+.resto-item {
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.resto-item__content {
+    width: 100%;
+    height: 190px;
+    padding: 16px 20px 20px 20px;
+}
+
+.resto-item__thumbnail {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.resto-item__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.resto-item__city {
+    font-size: 15px;
+    margin-top: 8px;
+}
+.resto-item__rating {
+    padding-left: 3px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.resto-item__rating span{
+    color: var(--yellow);
+}
+.resto-item__description-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.resto-item__description-content {
+  margin-top: 8px;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.btn-detail {
+  width: 100%;
+  margin: 30px 0 10px 0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: 0.3s;
+}
+.btn-detail:hover, 
+.btn-detail:focus {
+    cursor: pointer;
+    background-color: var(--blueSemiDark);
+}
+.btn-detail:active {
+    background-color: var(--blueDark);
+}
+
+.material-icons {
+    padding-bottom: 3px;
+    vertical-align: middle !important;
+}
