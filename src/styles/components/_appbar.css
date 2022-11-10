@@ -1,0 +1,117 @@
+
+header {
+  position: fixed !important;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+
+}
+app-bar{
+  padding: 3rem 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+} 
+header img {
+  user-select:none;
+  pointer-events: none;
+}
+app-bar .app-bar__brand a{
+  font-family: 'Dosis', san-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: black;
+  text-transform: capitalize;
+  width: 200px;
+  height: 65px;
+  padding: 15px 20px;
+}
+app-bar .app-bar__brand i{
+  color: var(--blue);
+  padding-right: .5rem;
+}
+.app-bar__navigation{
+  transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+}
+.app-bar__navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+.app-bar__navigation ul li{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 2rem;
+  width: 100px;
+  height: 100%;
+}
+.app-bar__navigation ul li a{
+  padding: 20px 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--light-black);
+} 
+.app-bar__navigation ul li a:hover,ul li a:focus{
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+#hamburgerButton {
+  font-size: 2.5rem;
+  cursor:pointer;
+  color: var(--black);
+  background-color: white;
+  display: none;
+  transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+  border: none;
+}
+
+
+/* Responsive Navbar */
+@media screen and (max-width: 860px) {
+  #hamburgerButton {
+      display: inline-block;
+      height: 56px;
+      width: 56px;
+      order: 3;
+  }
+  .fa-times{
+    transform: rotate(180deg);
+  }
+  .app-bar__navigation{
+    height: 400px;
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    background-color: var(--white);
+    text-align: center;
+    border-top: 0.7rem solid #aaa;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    order: 2;
+    }
+  .app-bar__navigation.open{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .app-bar__navigation ul {
+    display: block;
+    background-color: var(--white);
+  }
+  .app-bar__navigation ul li{
+    margin: 4rem auto;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1rem 0;
+  }
+  .app-bar__navigation ul li a{
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,24 @@
+.favorite-button {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    position: fixed;
+    bottom: 76px;
+    right: 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--white);
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+
+.favorite-button:active {
+    background-color: var(--blueDark);
+}
+.favorite-button:focus {
+    background-color: var(--blueSemiDark);
+}

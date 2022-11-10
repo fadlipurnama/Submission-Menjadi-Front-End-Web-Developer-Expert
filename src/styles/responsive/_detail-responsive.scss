@@ -1,0 +1,63 @@
+@import './properties/mixins.scss';
+@import './properties/variable.scss';
+
+@include media-in(small-mobile) {
+
+}
+
+@include media-in(mobile) {
+  .menu-food-list, 
+  .menu-drink-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include media-in(tablet) {
+  .detail-restaurant {
+    font-size: 16px;
+  }
+  .label-section-detail-resto{
+    font-size: 24px;
+  }
+  detail-restaurant-info{
+    .restaurant__poster{
+      object-fit: cover;
+    }
+    .restaurant__description-content {
+        display: -webkit-box;
+        -webkit-line-clamp: 11;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+  }
+  .menu-food-list, .menu-drink-list {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  item-review-resto{
+    .review__content{
+      margin-left: 80px;
+    }
+  }
+}
+
+@include media-in(desktop) {
+  detail-restaurant-info{
+    .restaurant__detail{
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .restaurant__info {
+      padding: 20px 0 0 20px;
+      .restaurant__title {
+        font-weight: bold;
+      }
+      .restaurant__description {
+        margin-top: 20px;
+      }
+    }
+  }
+  .menu-food-list, .menu-drink-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

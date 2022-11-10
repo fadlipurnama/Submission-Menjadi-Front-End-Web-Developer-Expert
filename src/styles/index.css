@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Roboto:wght@300;400&display=swap');
+
+/* component */
+@import './components/_appbar.css';
+@import './components/_footer.css';
+@import './components/_skip-link.css';
+
+
+/* pages */
+@import './pages/detail/_detail-restaurant.css';
+@import './pages/detail/_detail-menu-restaurant.css';
+@import './pages/detail/_detail-review-restaurant.css';
+@import './pages/detail/_detail-favorite-button.css';
+@import './pages/home/_item-restaurant.css';
+@import './pages/home/_hero.css';
+@import './pages/favorite/_favorite.css';
+@import './pages/loading/_loading-spinner.scss';
+
+
+
+/* responsive */
+@import './responsive/_home-responsive.scss';
+@import './responsive/_detail-responsive.scss';
+@import './responsive/_favorite-responsive.scss';
+
+:root{
+  --blue:#199aff;
+  --blueSemiDark: #185fce;
+  --blueDark: #181fce;
+  --black:#222;
+  --white:#fff;
+  --yellow: rgb(255, 255, 20);
+  --light-black:rgb(125, 125, 125);
+  --light-white:#ccc;
+  --light-bg:#efefff;
+  --dark-bg:rgba(0,0,0,0.7);
+  --box-shadow:0.2px 6px 10px 0.2px rgba(0, 0, 0, 0.2);
+  --box-shadow-hover: 0.2px 6px 10px 0.2px rgba(0, 0, 0, 0.7);
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body{
+  min-height: 86vh;
+  font-family: sans-serif;
+  width: 100%;
+  position: relative;
+  background-color: var(--light-bg);
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+:focus {
+  outline: 4px solid var(--yellow);
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: var(--blue);
+}
